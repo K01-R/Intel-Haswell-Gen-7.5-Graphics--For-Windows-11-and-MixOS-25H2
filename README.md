@@ -2,7 +2,7 @@
 > This project has officially reached its final stage of development (End of Life). 
 > All stable infrastructure tweaks, MSI interruption mappings, and symmetric API performance constraints have been fully exhausted under the Build v5222 pipeline. No further INF updates, features, or architectural enhancements will be deployed. This release remains preserved as the absolute performance ceiling for Intel HD Graphics 4600 on MixOS & Windows 11.
 
-# Intel-Haswell-Gen-7.5-Graphics-Core---Integrated-Subsystem-Driver-for-Windows-11-&-MixOS-25H2
+# Intel-Haswell-Gen-7.5-Graphics-Driver-for-Windows-11-&-MixOS-25H2
 little customized inte driver (based on 20.40.5171 / 15.40.5171)
 
 - Tested On: Dell Optiplex 3020
