@@ -1,6 +1,7 @@
-> ### ⚠️ END OF LIFE (EOL) NOTICE
-> This project has officially reached its final stage of development (End of Life). 
-> All stable infrastructure tweaks, MSI interruption mappings, and symmetric API performance constraints have been fully exhausted under the Build v5222 pipeline. No further INF updates, features, or architectural enhancements will be deployed. This release remains preserved as the absolute performance ceiling for Intel HD Graphics 4600 on MixOS & Windows 11.
+> ### ⚠️ Status: Development Paused — Not Discontinued
+> The Intel Haswell Gen 7.5 Graphics project is currently on a temporary development pause. The project has not been discontinued, and its research, testing, and development may resume in the future.
+>
+> The existing work, technical findings, and compatibility research remain available for reference. Further development will depend on future testing, available resources, and the project's priorities.
 
 # Intel-Haswell-Gen-7.5-Graphics-Driver-for-Windows-11-&-MixOS-25H2
 little customized inte driver (based on 20.40.5171 / 15.40.5171)
