@@ -24,7 +24,7 @@ Provider=%Intel%
 ClassGUID={4D36E968-E325-11CE-BFC1-08002BE10318}
 Class=Display
 CatalogFile=igdlh.cat
-DriverVer=09/06/2026,20.19.15.5222
+DriverVer=10/25/2026,20.19.15.5225
 ;
 ; Package Info for Co-Installer
 ;
@@ -1454,48 +1454,20 @@ ServiceBinary  = %11%\igfxCUIService.exe
 AddReg = CUIService.AddReg
 DelReg = CUIService.DelReg
 
-; Win DT DX11 Capable SKUs with Imola driver
+; Win DT DX11 Capable SKUs with Imola driver - Hotfix v5223 MixOS
 ;
 [igfx_SoftwareDX11Settings]
 HKR,, DisableShaderCacheLimit, %REG_DWORD%, 1
 HKR,, ForceSynchronization, %REG_DWORD%, 0
 HKR,, MaxPreRenderedFrames, %REG_DWORD%, 1
 HKR,, VsyncBufferLevel, %REG_DWORD%, 0
-HKR,, TotalSchedSubmissions, %REG_DWORD%, 256
-HKR,, DisableShaderCacheLimit, %REG_DWORD%, 1
-HKR,, ForceSynchronization, %REG_DWORD%, 0
-HKR,, MaxPreRenderedFrames, %REG_DWORD%, 1
-HKR,, VsyncBufferLevel, %REG_DWORD%, 0
-HKR,, TotalSchedSubmissions, %REG_DWORD%, 256
-HKR,, DisableShaderCacheLimit, %REG_DWORD%, 1
-HKR,, ForceSynchronization, %REG_DWORD%, 0
-HKR,, MaxPreRenderedFrames, %REG_DWORD%, 1
-HKR,, VsyncBufferLevel, %REG_DWORD%, 0
-HKR,, TotalSchedSubmissions, %REG_DWORD%, 256
-HKR,, DisableShaderCacheLimit, %REG_DWORD%, 1
-HKR,, ForceSynchronization, %REG_DWORD%, 0
-HKR,, TotalSchedSubmissions, %REG_DWORD%, 256
-HKR,, TotalSchedSubmissions, %REG_DWORD%, 256
-HKR,, TripleBuffer, %REG_DWORD%, 1
-
-HKR,, TotalSchedSubmissions, %REG_DWORD%, 256
-HKR,, TotalSchedSubmissions, %REG_DWORD%, 256
-
 HKR,, TotalSchedSubmissions, %REG_DWORD%, 512
-
-
+HKR,, TripleBuffer, %REG_DWORD%, 1
 HKR,"Interrupt Management\MessageSignaledInterruptProperties",MSISupported,%REG_DWORD%,1
 HKR,"Interrupt Management\MessageSignaledInterruptProperties",MessageNumberLimit,%REG_DWORD%,1
 HKR,, PowerSavingPolicy, %REG_DWORD%, 0
 HKR,, DisableDynamicGating, %REG_DWORD%, 1
-HKR,, TotalSchedSubmissions, %REG_DWORD%, 256
-
-HKR,, TotalSchedSubmissions, %REG_DWORD%, 256
 HKR,, KMD_EnableBrightnessInterface, %REG_DWORD%, 1
-HKR,, SmoothBrightness, %REG_DWORD%, 1
-HKR,, SmoothBrightness, %REG_DWORD%, 1
-HKR,, AddAdaptiveBrightnessCaps, %REG_DWORD%, 1
-HKR,, EDP_Adaptive_Brightness_Caps, %REG_DWORD%, 0
 HKR,, SmoothBrightness, %REG_DWORD%, 1
 HKR,, AddAdaptiveBrightnessCaps, %REG_DWORD%, 1
 HKR,, EDP_Adaptive_Brightness_Caps, %REG_DWORD%, 0
@@ -1506,39 +1478,24 @@ HKR,, IncreaseSystemMemoryDynamicAllocation, %REG_DWORD%, 1
 HKR,, GmmForceAllocationPolicy, %REG_DWORD%, 1
 HKR,, DisableAsyncCompute, %REG_DWORD%, 0
 HKR,, MaxFrameLatency, %REG_DWORD%, 1
-HKR,, PowerSavingPolicy, %REG_DWORD%, 0
-HKR,, DisableDynamicGating, %REG_DWORD%, 1
 HKR,, ShaderExecutionMode, %REG_DWORD%, 1
 HKR,, RuntimePowerManagement, %REG_DWORD%, 1
 HKR,, ModernStandbySupport, %REG_DWORD%, 1
 HKR,, InstalledDisplayDrivers,     %REG_MULTI_SZ%, igdumdim64, igd10iumd64, igd10iumd64, igdumdim32, igd10iumd32, igd10iumd32
 HKR,, UserModeDriverName,        %REG_MULTI_SZ%, igdumdim64.dll, igd10iumd64.dll, igd10iumd64.dll
 HKR,, UserModeDriverNameWow,  %REG_MULTI_SZ%, igdumdim32.dll, igd10iumd32.dll, igd10iumd32.dll
-HKR,, PowerSavingPolicy, %REG_DWORD%, 0
-HKR,, DisableDynamicGating, %REG_DWORD%, 1
-HKR,, ShaderExecutionMode, %REG_DWORD%, 1
-HKR,, DisableAsyncCompute, %REG_DWORD%, 0
-HKR,, MaxFrameLatency, %REG_DWORD%, 1
-HKR,, CBRenderAfterFlip, %REG_DWORD%, 1
 ;
-; DX12 Capable SKUs with Imola driver
+; DX12 Capable SKUs with Imola driver - Hotfix v5223 MixOS
 ;
 [igfx_SoftwareDX12Settings]
 HKR,, DisableShaderCacheLimit, %REG_DWORD%, 1
 HKR,, ForceSynchronization, %REG_DWORD%, 0
 HKR,, MaxPreRenderedFrames, %REG_DWORD%, 1
 HKR,, VsyncBufferLevel, %REG_DWORD%, 0
-HKR,, TotalSchedSubmissions, %REG_DWORD%, 256
+HKR,, TotalSchedSubmissions, %REG_DWORD%, 512
 HKR,, PowerSavingPolicy, %REG_DWORD%, 0
 HKR,, DisableDynamicGating, %REG_DWORD%, 1
-HKR,, TotalSchedSubmissions, %REG_DWORD%, 256
-
-HKR,, TotalSchedSubmissions, %REG_DWORD%, 256
 HKR,, KMD_EnableBrightnessInterface, %REG_DWORD%, 1
-HKR,, SmoothBrightness, %REG_DWORD%, 1
-HKR,, SmoothBrightness, %REG_DWORD%, 1
-HKR,, AddAdaptiveBrightnessCaps, %REG_DWORD%, 1
-HKR,, EDP_Adaptive_Brightness_Caps, %REG_DWORD%, 0
 HKR,, SmoothBrightness, %REG_DWORD%, 1
 HKR,, AddAdaptiveBrightnessCaps, %REG_DWORD%, 1
 HKR,, EDP_Adaptive_Brightness_Caps, %REG_DWORD%, 0
@@ -1549,32 +1506,21 @@ HKR,, IncreaseSystemMemoryDynamicAllocation, %REG_DWORD%, 1
 HKR,, GmmForceAllocationPolicy, %REG_DWORD%, 1
 HKR,, DisableAsyncCompute, %REG_DWORD%, 0
 HKR,, MaxFrameLatency, %REG_DWORD%, 1
-HKR,, PowerSavingPolicy, %REG_DWORD%, 0
-HKR,, DisableDynamicGating, %REG_DWORD%, 1
 HKR,, ShaderExecutionMode, %REG_DWORD%, 1
 HKR,, RuntimePowerManagement, %REG_DWORD%, 1
 HKR,, ModernStandbySupport, %REG_DWORD%, 1
 HKR,, InstalledDisplayDrivers,     %REG_MULTI_SZ%, igdumdim64, igd10iumd64, igd10iumd64, igd12umd64, igdumdim32, igd10iumd32, igd10iumd32, igd12umd32
 HKR,, UserModeDriverName,        %REG_MULTI_SZ%, igdumdim64.dll, igd10iumd64.dll, igd10iumd64.dll, igd12umd64.dll
 HKR,, UserModeDriverNameWow,  %REG_MULTI_SZ%, igdumdim32.dll, igd10iumd32.dll, igd10iumd32.dll, igd12umd32.dll
-HKR,, PowerSavingPolicy, %REG_DWORD%, 0
-HKR,, DisableDynamicGating, %REG_DWORD%, 1
-HKR,, ShaderExecutionMode, %REG_DWORD%, 1
-HKR,, DisableAsyncCompute, %REG_DWORD%, 0
-HKR,, MaxFrameLatency, %REG_DWORD%, 1
-HKR,, CBRenderAfterFlip, %REG_DWORD%, 1
-
-;
-; Win10 Specific Registry Keys.  These should not exist in production releases!!!
 ;
 [igfx_Win10Settings]
 HKLM,"SYSTEM\CurrentControlSet\Control\GraphicsDrivers\MemoryManager",DxgMms2OfferReclaim,%REG_DWORD%,2
-HKR,, "OverlayCaps", %REG_DWORD%, 0x00000003
-HKR,, "DisableMPO", %REG_DWORD%, 0x00000000
-HKR,, "TdrLevel", %REG_DWORD%, 0x00000003
-HKR,, "TdrDelay", %REG_DWORD%, 0x00000008
-HKR,, "TdrLimitCount", %REG_DWORD%, 0x00000005
-HKR,, "CommandBufferSize", %REG_DWORD%, 0x00001000
+HKR,, OverlayCaps, %REG_DWORD%, 0x00000003
+HKR,, DisableMPO, %REG_DWORD%, 0x00000000
+HKR,, TdrLevel, %REG_DWORD%, 0x00000003
+HKR,, TdrDelay, %REG_DWORD%, 0x00000008
+HKR,, TdrLimitCount, %REG_DWORD%, 0x00000005
+HKR,, CommandBufferSize, %REG_DWORD%, 0x00001000
 
 
 [igfx_RemoveWin10Settings]
@@ -1591,19 +1537,19 @@ HKCR,CLSID\{1E719CDE-6B71-40AD-B442-AD02C129B3E2},,,"WD Secure Source Filter"
 HKCR,CLSID\{1E719CDE-6B71-40AD-B442-AD02C129B3E2}\InProcServer32,,,%11%"\IntelWiDiSecureSourceFilter64.dll"
 HKCR,CLSID\{1E719CDE-6B71-40AD-B442-AD02C129B3E2}\InProcServer32,"ThreadingModel",,"Both"
 
-HKCR,CLSID\{113FAE2B-FF38-4054-9229-467410D6EB27},,,"Intel® AAC encoder"
+HKCR,CLSID\{113FAE2B-FF38-4054-9229-467410D6EB27},,,"Intel? AAC encoder"
 HKCR,CLSID\{113FAE2B-FF38-4054-9229-467410D6EB27}\InProcServer32,,,%11%"\IntelWiDiAAC64.dll"
 HKCR,CLSID\{113FAE2B-FF38-4054-9229-467410D6EB27}\InProcServer32,"ThreadingModel",,"Both"
 
-HKCR,CLSID\{3B8F6B19-C9CE-4985-B09D-5A781EF85960},,,"Intel® properties"
+HKCR,CLSID\{3B8F6B19-C9CE-4985-B09D-5A781EF85960},,,"Intel? properties"
 HKCR,CLSID\{3B8F6B19-C9CE-4985-B09D-5A781EF85960}\InProcServer32,,,%11%"\IntelWiDiAAC64.dll"
 HKCR,CLSID\{3B8F6B19-C9CE-4985-B09D-5A781EF85960}\InProcServer32,"ThreadingModel",,"Both"
 
-HKCR,CLSID\{1ABC749F-6FD8-429A-BA11-F3179033C196},,,"Intel® Mux Properties"
+HKCR,CLSID\{1ABC749F-6FD8-429A-BA11-F3179033C196},,,"Intel? Mux Properties"
 HKCR,CLSID\{1ABC749F-6FD8-429A-BA11-F3179033C196}\InProcServer32,,,%11%"\IntelWiDiMux64.dll"
 HKCR,CLSID\{1ABC749F-6FD8-429A-BA11-F3179033C196}\InProcServer32,"ThreadingModel",,"Both"
 
-HKCR,CLSID\{241C022B-8D0B-447E-B8A6-525DAED49E4B},,,"Intel® Mux Renderer"
+HKCR,CLSID\{241C022B-8D0B-447E-B8A6-525DAED49E4B},,,"Intel? Mux Renderer"
 HKCR,CLSID\{241C022B-8D0B-447E-B8A6-525DAED49E4B}\InProcServer32,,,%11%"\IntelWiDiMux64.dll"
 HKCR,CLSID\{241C022B-8D0B-447E-B8A6-525DAED49E4B}\InProcServer32,"ThreadingModel",,"Both"
 
@@ -1897,8 +1843,8 @@ HKR,, CustomCSCMatrix, %REG_BINARY%, 00
 ;Selection of 10bit Gamma and 8bit Gamma 0x0A - Enables 10 bit Gamma, 0x00 - Enables 8 bit Gamma(Default)
 HKR,, NumGammaBits,                 %REG_DWORD%, 0x00
 ; Table below is set to 10BitGamma 1024 value table currently. Each value is 2 Bytes long, in little endian format with maximum value 0xFFFF
-; This field is valid only when “NumGammaBits” == 10. Otherwise, this filed is ignored.
-; When “NumGammaBits” == 10bit gamma, this should be populated with valid 10-bit Gamma table with 1024 entries
+; This field is valid only when ?NumGammaBits? == 10. Otherwise, this filed is ignored.
+; When ?NumGammaBits? == 10bit gamma, this should be populated with valid 10-bit Gamma table with 1024 entries
 HKR,, LFPGammaEncodeXBit,       %REG_BINARY%, 00
 
 ; Game apps settings
